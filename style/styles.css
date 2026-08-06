@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
 }
 :root{
     --color-primario: #0D2340;
     --color-secundario: #FFFFFF;
-    --color-terciario: #F5F5F5;
+    --color-terciario: rgb(192, 192, 192);
     --color-cuarto: #4CAF50;
-    --font-family: "Mulish", sans-serif;
 }
