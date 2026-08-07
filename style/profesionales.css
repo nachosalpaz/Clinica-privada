@@ -1,38 +1,142 @@
 
-.titulo{
+.titulo {
     text-align: center;
+    color: var(--color-cuarto);
 }
-.subtitulo{
-    text-align: center; 
+
+.subtitulo {
+    text-align: center;
+    color: var(--color-secundario);
 }
-body{
-    background-color: rgba(1, 1, 17, 0.897);
+
+body {
+    background-color: var(--color-primario);
+    
 }
-#directorioProfesional {
+
+ .directorioProfesional {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-    flex-wrap: wrap;
-    
-    
-    gap: 15x;
-    max-width: 1366px;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 20px;
     justify-content: center;
-}
-.profesional{
-    height: 300px ;
- 
-    background-color: blue;
-    margin: 10px;
+    max-width: 1200px; /* Opcional: limita el ancho máximo para que no se extienda demasiado en pantallas gigantes */
+    margin: 0 auto;    /* Centra todo el contenedor en la pantalla */
+    box-sizing: border-box;
+} 
+
+.profesional {
+    height: 350px;
+    width: 100%;
+    background-color: var(--color-primario);
     display: flex;
     border-radius: 12px;
+    border: 0.005rem solid rgb(2, 48, 2);
+    
     flex-direction: column;
     align-items: center;
-    
+    text-align: center;
     overflow: hidden;
-
+ /*    cursor: pointer; */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    /* box-shadow: inset 4px 8px 16px var(--color-cuarto); */  
+     box-shadow: 4px 8px 16px black;   
+     box-sizing: border-box; 
 }
-.imagenProfesional{
+
+.descripcion {
+    
+    width: 90%;
+    height:40%;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-block-end: 15px;
+}
+
+.imagenProfesional {
     width: 100%;
-    height: 70%;
-  /*   object-fit: cover; */
+    height:65%;
+    object-fit: cover;
+}
+
+.nombre {
+    height:10%;
+}
+.nombre h3 {
+    color: var(--color-secundario);
+    font-size: 16px;
+   
+}
+
+.profesion  {
+    color: var(--color-cuarto);
+    font-size: 16px;
+    height: 10%;
+}
+ 
+.dias  {
+    color: var(--color-terciario);
+    font-size: 12px;
+    height: 10%;
+ 
+}
+
+.btnProfesional{
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-block-end: 2px;
+}
+.btnProfesional #verPerfil {
+    width: 45%;
+    height: 100%;
+    border: 0.05rem solid var(--color-cuarto);
+    border-radius: 5px; 
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-size: 12px;
+
+ 
+}
+.btnProfesional #solicitarTurno {
+   
+    width: 45% ;
+    height: 100%;
+    border: 0.05rem solid var(--color-cuarto);
+    border-radius: 5px; 
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
+    font-size: 12px;
+}
+
+.btnProfesional #verPerfil:hover {
+
+    transform: translateY(-4px); /* Cambiado a translateY para que suba en vez de moverse solo a la derecha */
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    box-shadow: inset 4px 8px 16px var(--color-cuarto); 
+}
+.btnProfesional #solicitarTurno:hover {
+
+    transform: translateY(-4px); /* Cambiado a translateY para que suba en vez de moverse solo a la derecha */
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    box-shadow: inset 4px 8px 16px var(--color-secundario); 
+}
+.profesional:hover {
+    transform: translateY(-4px); /* Cambiado a translateY para que suba en vez de moverse solo a la derecha */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .directorioProfesional {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
 }
