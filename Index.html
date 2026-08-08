@@ -56,9 +56,9 @@
                         </li>
                     </ul>
                     <nav class="navbar">
-                        <form class="container-fluid justify-content-start">
+                        <form class="container-fluid justify-content-start ">
                             <button class="btn btn-outline-success me-2" type="button">Iniciar Sesión</button>
-                            <button class="btn btn-success me-2" type="button">Registrarse</button>
+                            <button class="btn btn-success me-2 mt-2" type="button">Registrarse</button>
                         </form>
                     </nav>
                 </div>
@@ -66,6 +66,104 @@
         </nav>
     </header>
     <main>
+        <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active " data-bs-interval="10000">
+                    <div class="gradiante">
+                        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=1400&h=600&fit=crop&auto=format"
+                            class="d-block w-100" alt="Imagen de atención pediátrica">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="texto2">Campaña de salud 2026</p>
+                        <h5 class="">Atención Pediatra</h5>
+                        <p class="texto3">Los controles preventivos salvan vidas. Agendá tu chequeo anual con nuestros
+                            especialistas.</p>
+                        <button class="btn btn-success me-2" type="button">Solicitar Turno</button>
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="gradiante">
+                        <img src="https://images.unsplash.com/photo-1758691461990-03b49d969495?w=1400&h=600&fit=crop&auto=format"
+                            class="d-block w-100" alt="Imagen de salud cardiovascular">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="texto2">Mes del corazón</p>
+                        <h5>Salud cardiovascular</h5>
+                        <p class="texto3">El 80% de los problemas cardíacos son prevenibles. Conocé el estado de tu
+                            corazón.</p>
+                        <button class="btn btn-success me-2" type="button">Ver especialidades</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="gradiante">
+                        <img src="https://images.unsplash.com/photo-1632053002928-1919605ee6f7?w=1400&h=600&fit=crop&auto=format"
+                            class="d-block w-100" alt="Imagen de atención pediátrica">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="texto2">Cuidemos a los más pequeños</p>
+                        <h5>Atención Pediatra</h5>
+                        <p class="texto3">Nuestros pediatras brindan atención integral para el crecimiento saludable de
+                            tus hijos.</p>
+                        <button class="btn btn-success me-2" type="button">Nuestros profesionales</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-5">
+                <div class="col">
+                    <p class="texto2 mt-5">QUIENES SOMOS</p>
+                    <h2 class="texto1">Más de 15 años cuidando tu salud</h2>
+                    <p class="texto4">MediTurnos Clínica Médica es un centro de salud integral ubicado en el corazón de Buenos
+                        Aires. Contamos con un equipo de más de 40 profesionales especializados, tecnología de punta y un
+                        sistema de turnos online que simplifica tu atención médica.</p>
+                    <p class="texto4">Nuestra misión es ofrecer    atención médica de excelencia, accesible y humanizada,
+                        garantizando el bienestar de cada paciente en todas las etapas de su vida.
+                    </p>
+                    <button class="btn btn-outline-success me-2" type="button">Conocer más</button>
+                </div>
+                <div class="col">
+                    <div class="iconos-quienessomos">
+                        <img src="./assets/icono-doctor.png" alt="Doctor">
+                        <h5 class="estadisticas texto2">+40</h5>
+                        <p class="texto3"> Profesionales</p>
+                    </div>
+                    <div class="iconos-quienessomos">
+                        <img src="./assets/icono-trofeo.png" alt="Trofeo">
+                        <h5 class="estadisticas texto2">+15</h5>
+                        <p class="texto3"> Años de experiencia</p>
+                    </div>
+                    <div class="iconos-quienessomos">
+                        <img src="./assets/icono-microscopio.png" alt="Microscopio">
+                        <h5 class="estadisticas texto2">12</h5>
+                        <p class="texto3"> Especialidades</p>
+                    </div>
+                    <div class="iconos-quienessomos">
+                        <img src="./assets/icono-corazon.png" alt="Corazón">
+                        <h5 class="estadisticas texto2">+50k</h5>
+                        <p class="texto3"> Pacientes atendidos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div>
@@ -86,7 +184,7 @@
                 <div class="col">
                     <h6 class="texto2">REDES SOCIALES</h6>
                     <div>
-                        <a href="#" target="_blank">
+                        <a href="#" target="_blank" class="prueba">
                             <img src="./assets/icono-Facebook.png" alt="Facebook">
                             Facebook
                             <p class="texto3">@MediTurnos.Clinica</p>
