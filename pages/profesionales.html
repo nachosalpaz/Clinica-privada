@@ -70,134 +70,219 @@
 
     <main>
         <h3 class="subtitulo">Equipo Médico</h3>
-        <h1 class="titulo">Profesionales Destacados</h1>
-
+        <h1 class="titulo">Nuestros Profesionales </h1>
+        <h6 class="subtitulo2">Un equipo comprometido con tu bienestar</h6>
+        <div class="contenedor-filtro">
+            <!-- Controles Radio (Ocultos visualmente mediante CSS) -->
+            <input type="radio" id="todos" name="filtro-especialidad" checked>
+            <input type="radio" id="clinica" name="filtro-especialidad">
+            <input type="radio" id="cardiologia" name="filtro-especialidad">
+            <input type="radio" id="pediatria" name="filtro-especialidad">
+    
+            <!-- Botones visibles -->
+            <div class="botones-filtro">
+                <label for="todos" class="btn-filtro">Todos</label>
+                <label for="clinica" class="btn-filtro">Clínica Médica</label>
+                <label for="cardiologia" class="btn-filtro">Cardiología</label>
+                <label for="pediatria" class="btn-filtro">Pediatría</label>
+            </div>
 
         <section class="directorioProfesional">
-            <article class="profesional">
-                <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+            <article class="profesional clinica">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
                     alt="Doc. Pablo Gonzalez">
+                    <div class="capaSombra"></div>
+                </div>
+                    
                 <div class="descripcion">
                     <div class="nombre">
                         <h3>Dr. Pablo Gonzalez</h3>
                     </div>
                     <div class="profesion">
-                        <p>Medico Clinico</p>
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
                     </div>
                     <div class="dias">
-                        <p>lunes,martes,viernes</p>
+                        <p>Lunes,martes,viernes</p>
                     </div>
                     <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
                             Turno</button></div>
                 </div>
             </article>
-            <article class="profesional">
-                <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+            <article class="profesional clinica">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
                     alt="Doc. Pablo Gonzalez">
-                    <div class="descripcion">
-                        <div class="nombre">
-                            <h3>Dr. Pablo Gonzalez</h3>
-                        </div>
-                        <div class="profesion">
-                            <p>Medico Clinico</p>
-                        </div>
-                        <div class="dias">
-                            <p>lunes,martes,viernes</p>
-                        </div>
-                        <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
-                                Turno</button></div>
+                    <div class="capaSombra"></div>
+                </div>
+                    
+                <div class="descripcion">
+                    <div class="nombre">
+                        <h3>Dr. Pablo Gonzalez</h3>
                     </div>
+                    <div class="profesion">
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
+                    </div>
+                    <div class="dias">
+                        <p>Lunes,martes,viernes</p>
+                    </div>
+                    <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
+                            Turno</button></div>
+                </div>
             </article>
-            <article class="profesional">
-                <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+            <article class="profesional cardiologia">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
                     alt="Doc. Pablo Gonzalez">
-                    <div class="descripcion">
-                        <div class="nombre">
-                            <h3>Dr. Pablo Gonzalez</h3>
-                        </div>
-                        <div class="profesion">
-                            <p>Medico Clinico</p>
-                        </div>
-                        <div class="dias">
-                            <p>lunes,martes,viernes</p>
-                        </div>
-                        <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
-                                Turno</button></div>
+                    <div class="capaSombra"></div>
+                </div>
+                    
+                <div class="descripcion">
+                    <div class="nombre">
+                        <h3>Dr. Pablo Gonzalez</h3>
                     </div>
+                    <div class="profesion">
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
+                    </div>
+                    <div class="dias">
+                        <p>Lunes,martes,viernes</p>
+                    </div>
+                    <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
+                            Turno</button></div>
+                </div>
             </article>
 
-            <article class="profesional">
-                <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+            <article class="profesional pediatria">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
                     alt="Doc. Pablo Gonzalez">
-                    <div class="descripcion">
-                        <div class="nombre">
-                            <h3>Dr. Pablo Gonzalez</h3>
-                        </div>
-                        <div class="profesion">
-                            <p>Medico Clinico</p>
-                        </div>
-                        <div class="dias">
-                            <p>lunes,martes,viernes</p>
-                        </div>
-                        <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
-                                Turno</button></div>
+                    <div class="capaSombra"></div>
+                </div>
+                    
+                <div class="descripcion">
+                    <div class="nombre">
+                        <h3>Dr. Pablo Gonzalez</h3>
                     </div>
+                    <div class="profesion">
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
+                    </div>
+                    <div class="dias">
+                        <p>Lunes,martes,viernes</p>
+                    </div>
+                    <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
+                            Turno</button></div>
+                </div>
             </article>
-            <article class="profesional">
-                <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+            <article class="profesional cardiologia">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
                     alt="Doc. Pablo Gonzalez">
-                    <div class="descripcion">
-                        <div class="nombre">
-                            <h3>Dr. Pablo Gonzalez</h3>
-                        </div>
-                        <div class="profesion">
-                            <p>Medico Clinico</p>
-                        </div>
-                        <div class="dias">
-                            <p>lunes,martes,viernes</p>
-                        </div>
-                        <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
-                                Turno</button></div>
+                    <div class="capaSombra"></div>
+                </div>
+                    
+                <div class="descripcion">
+                    <div class="nombre">
+                        <h3>Dr. Pablo Gonzalez</h3>
                     </div>
+                    <div class="profesion">
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
+                    </div>
+                    <div class="dias">
+                        <p>Lunes,martes,viernes</p>
+                    </div>
+                    <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
+                            Turno</button></div>
+                </div>
             </article>
-            <article class="profesional">
-                <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+            <article class="profesional clinica">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
                     alt="Doc. Pablo Gonzalez">
-                    <div class="descripcion">
-                        <div class="nombre">
-                            <h3>Dr. Pablo Gonzalez</h3>
-                        </div>
-                        <div class="profesion">
-                            <p>Medico Clinico</p>
-                        </div>
-                        <div class="dias">
-                            <p>lunes,martes,viernes</p>
-                        </div>
-                        <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
-                                Turno</button></div>
+                    <div class="capaSombra"></div>
+                </div>
+                    
+                <div class="descripcion">
+                    <div class="nombre">
+                        <h3>Dr. Pablo Gonzalez</h3>
                     </div>
+                    <div class="profesion">
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
+                    </div>
+                    <div class="dias">
+                        <p>Lunes,martes,viernes</p>
+                    </div>
+                    <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
+                            Turno</button></div>
+                </div>
+            </article>            <article class="profesional clinica">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+                    alt="Doc. Pablo Gonzalez">
+                    <div class="capaSombra"></div>
+                </div>
+                    
+                <div class="descripcion">
+                    <div class="nombre">
+                        <h3>Dr. Pablo Gonzalez</h3>
+                    </div>
+                    <div class="profesion">
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
+                    </div>
+                    <div class="dias">
+                        <p>Lunes,martes,viernes</p>
+                    </div>
+                    <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
+                            Turno</button></div>
+                </div>
             </article>
-            <article class="profesional">
-                <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
+            <article class="profesional pediatria">
+                <div class="imagenProfesional">
+                    <img class="imagenProfesional" src="../assets/imgProfesinales/pablo_gonzalez.jpeg"
                     alt="Doc. Pablo Gonzalez">
-                    <div class="descripcion">
-                        <div class="nombre">
-                            <h3>Dr. Pablo Gonzalez</h3>
-                        </div>
-                        <div class="profesion">
-                            <p>Medico Clinico</p>
-                        </div>
-                        <div class="dias">
-                            <p>lunes,martes,viernes</p>
-                        </div>
-                        <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
-                                Turno</button></div>
+                    <div class="capaSombra"></div>
+                </div>
+                    
+                <div class="descripcion">
+                    <div class="nombre">
+                        <h3>Dr. Pablo Gonzalez</h3>
                     </div>
-
+                    <div class="profesion">
+                        <p><b>Clinica Medica </b></p>
+                    </div>
+                    <div class="texto">
+                        <p>Especialista en cardiología intervencionista con 12 años de trayectoria.</p>
+                    </div>
+                    <div class="dias">
+                        <p>Lunes,martes,viernes</p>
+                    </div>
+                    <div class="btnProfesional"><button id="verPerfil">Ver Perfil</button><button id="solicitarTurno">Solicitar
+                            Turno</button></div>
+                </div>
             </article>
 
         </section>
-
+        </div>
     </main>
 
 
