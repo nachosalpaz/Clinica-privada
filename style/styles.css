@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Mulish", sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
 }
 :root{
     --color-primario: #0D2340;
