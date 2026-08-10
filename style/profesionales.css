@@ -18,7 +18,7 @@ input[type="radio"][name="filtro-especialidad"] {
     padding: 8px 16px;
     border: 1px solid #007bff;
     background-color: transparent;
-    color: #007bff;
+    color: var(--color-secundario);
     border-radius: 20px;
     cursor: pointer;
     user-select: none;
@@ -26,7 +26,7 @@ input[type="radio"][name="filtro-especialidad"] {
 }
 
 .btn-filtro:hover {
-    background-color: #e6f0ff;
+    background-color: var(--color-cuarto);
 }
 
 /* --- Lógica del Filtro mediante combinadores CSS --- */
@@ -35,22 +35,31 @@ input[type="radio"][name="filtro-especialidad"] {
 #todos:checked ~ .botones-filtro label[for="todos"],
 #clinica:checked ~ .botones-filtro label[for="clinica"],
 #cardiologia:checked ~ .botones-filtro label[for="cardiologia"],
-#pediatria:checked ~ .botones-filtro label[for="pediatria"] {
-    background-color: #007bff;
-    color: #ffffff;
+#pediatria:checked ~ .botones-filtro label[for="pediatria"],
+#traumatologia:checked ~ .botones-filtro label[for="traumatologia"],
+#ginecologia:checked ~ .botones-filtro label[for="ginecologia"],
+#dermatologia:checked ~ .botones-filtro label[for="dermatologia"] {
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
 }
 
 /* Ocultar todas las tarjetas cuando se selecciona un filtro específico */
 #clinica:checked ~ .directorioProfesional .profesional,
 #cardiologia:checked ~ .directorioProfesional .profesional,
-#pediatria:checked ~ .directorioProfesional .profesional {
+#pediatria:checked ~ .directorioProfesional .profesional,
+#traumatologia:checked ~ .directorioProfesional .profesional,
+#ginecologia:checked ~ .directorioProfesional .profesional,
+#dermatologia:checked ~ .directorioProfesional .profesional{
     display: none;
 }
 
 /* Mostrar únicamente las tarjetas de la especialidad seleccionada */
 #clinica:checked ~ .directorioProfesional .profesional.clinica,
 #cardiologia:checked ~ .directorioProfesional .profesional.cardiologia,
-#pediatria:checked ~ .directorioProfesional .profesional.pediatria {
+#pediatria:checked ~ .directorioProfesional .profesional.pediatria,
+#traumatologia:checked ~ .directorioProfesional .profesional.traumatologia,
+#ginecologia:checked ~ .directorioProfesional .profesional.ginecologia,
+#dermatologia:checked ~ .directorioProfesional .profesional.dermatologia {
 
     display: flex;
     flex-direction: column;
@@ -110,7 +119,7 @@ body {
         text-align: center;
         overflow: hidden;
      /*    cursor: pointer; */
-        transition: transform 0.4s ease, box-shadow 0.4s ease; 
+        transition: transform 1s ease, box-shadow 0.4s ease; 
         /* box-shadow: inset 4px 8px 16px var(--color-cuarto); */  
          box-shadow: 4px 8px 16px black;   
          box-sizing: border-box; 
@@ -141,7 +150,7 @@ body {
     width:100%;
     height:100%;
    /*  object-fit: cover; */
-   transition: transform 1s ease; /*velocidad del zoom*/
+   transition: transform 2s ease; /*velocidad del zoom*/
 }
 
 .imagenProfesional img:hover{
