@@ -34,6 +34,26 @@ body {
 .boton-nav {
   background-color: var(--color-cuarto);
 }
+.banner {
+  background-color: var(--color-cuarto);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+}
+.banner .btn {
+  background-color: #08213d;
+  border: none;
+  padding: 5px 12px;
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  .banner {
+    display: none;
+  }
+}
 footer {
   background-color: var(--color-primario);
   color: var(--color-secundario);
@@ -104,6 +124,7 @@ footer a img {
   font-size: 14px;
   margin: 2px 0 0;
 }
+.equipo-medico,
 .beneficios,
 .servicios {
   background-color: #0e2948;
@@ -170,28 +191,17 @@ footer a img {
   border-radius: 8px;
   border: none;
 }
-.btn-registro,
-.btn-turno{
-  background-color: var(--color-primario);
-  color: var(--color-secundario);
-  font-size: 14px;
-  font-weight: bold;
-  padding: 14px 30px;
-  border-radius: 8px;
-  border: none;
-}
-
 .btn-especialidades:hover {
   background-color: var(--color-cuarto);
   color: var(--color-secundario);
 }
-.beneficios img{
-  background-color:rgb(76, 175, 80, 0.15) ;
+.beneficios img {
+  background-color: rgb(76, 175, 80, 0.15);
   border-radius: 50%;
   padding: 10px;
   height: 60px;
   object-fit: cover;
 }
-.solicitar-turnos{
+.solicitar-turnos {
   background-color: var(--color-cuarto);
 }
