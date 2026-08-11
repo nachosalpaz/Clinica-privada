@@ -10,15 +10,14 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style/styles.css">
     <link rel="stylesheet" href="./style/index.css">
 </head>
 
 <body>
-    <header class="navbar-mediturno">
+    <header class="navbar-mediturno mb-2">
         <nav class="navbar navbar-expand-lg navbar-mediturno">
             <div class="container-fluid ">
                 <div class=" logo-nav navbar-brand">
@@ -66,12 +65,509 @@
         </nav>
     </header>
     <main>
+        <section class="banner">
+            <p class="pt-3">🎉 Agosto sin lista de espera — Primeras consultas con 30% de descuento.
+            </p>
+            <a href="" class="btn btn-primary">Reservar ahora</a>
+        </section>
+        <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active " data-bs-interval="10000">
+                    <div class="gradiante">
+                        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=1400&h=600&fit=crop&auto=format"
+                            class="d-block w-100" alt="Imagen de atención pediátrica">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="texto2">Campaña de salud 2026</p>
+                        <h5 class="">Atención Pediatra</h5>
+                        <p class="texto3">Los controles preventivos salvan vidas. Agendá tu chequeo anual con nuestros
+                            especialistas.</p>
+                        <button class="btn btn-success me-2" type="button">Solicitar Turno</button>
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <div class="gradiante">
+                        <img src="https://images.unsplash.com/photo-1758691461990-03b49d969495?w=1400&h=600&fit=crop&auto=format"
+                            class="d-block w-100" alt="Imagen de salud cardiovascular">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="texto2">Mes del corazón</p>
+                        <h5>Salud cardiovascular</h5>
+                        <p class="texto3">El 80% de los problemas cardíacos son prevenibles. Conocé el estado de tu
+                            corazón.</p>
+                        <button class="btn btn-success me-2" type="button">Ver especialidades</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="gradiante">
+                        <img src="https://images.unsplash.com/photo-1632053002928-1919605ee6f7?w=1400&h=600&fit=crop&auto=format"
+                            class="d-block w-100" alt="Imagen de atención pediátrica">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="texto2">Cuidemos a los más pequeños</p>
+                        <h5>Atención Pediatra</h5>
+                        <p class="texto3">Nuestros pediatras brindan atención integral para el crecimiento saludable de
+                            tus hijos.</p>
+                        <button class="btn btn-success me-2" type="button">Nuestros profesionales</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="quienes-somos mt-5 pb-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center mb-4">
+                        <p class="texto2">QUIÉNES SOMOS</p>
+                        <h2 class="texto1">
+                            Más de 15 años cuidando tu salud
+                        </h2>
+                        <p class="texto4">
+                            MediTurnos Clínica Médica es un centro de salud integral ubicado
+                            en el corazón de Buenos Aires. Contamos con un equipo de más de
+                            40 profesionales especializados, tecnología de punta y un sistema
+                            de turnos online que simplifica tu atención médica.
+                        </p>
+                        <p class="texto4">
+                            Nuestra misión es ofrecer atención médica de excelencia, accesible
+                            y humanizada, garantizando el bienestar de cada paciente en todas
+                            las etapas de su vida.
+                        </p>
+                        <button class="btn btn-outline-success boton-conocer" type="button">
+                            Conocer más
+                        </button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="estadistica-card">
+                                    <img src="./assets/icono-doctor.png" alt="Doctor" class="icono-estadistica">
+                                    <h3 class="texto2">40+</h3>
+                                    <p class="texto1">Profesionales</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="estadistica-card">
+                                    <img src="./assets/icono-trofeo.png" alt="Trofeo" class="icono-estadistica">
+                                    <h3 class="texto2">15+</h3>
+                                    <p class="texto1">Años de experiencia</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="estadistica-card">
+                                    <img src="./assets/icono-microscopio.png" alt="Microscopio"
+                                        class="icono-estadistica">
+                                    <h3 class="texto2">12</h3>
+                                    <p class="texto1">Especialidades</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="estadistica-card">
+                                    <img src="./assets/icono-corazon.png" alt="Corazón" class="icono-estadistica">
+                                    <h3 class="texto2">50K+</h3>
+                                    <p class="texto1">Pacientes atendidos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="servicios">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="texto2">
+                        NUESTROS SERVICIOS
+                    </p>
+                    <h2 class="texto1">
+                        Todo lo que necesitás en un solo lugar
+                    </h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="servicio-card h-100">
+                            <img src="./assets/icono-calendario.png" alt="Turnos online" class="icono-servicio">
+                            <h3 class="texto1">
+                                Turnos Online
+                            </h3>
+                            <p class="texto3">
+                                Reservá tu consulta en minutos desde donde estés,
+                                las 24 horas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="servicio-card h-100">
+                            <img src="./assets/icono-pastilla.png" alt="Consultas médicas" class="icono-servicio">
+                            <h3 class="texto1">
+                                Consultas Médicas
+                            </h3>
+                            <p class="texto3">
+                                Atención presencial y seguimiento personalizado
+                                con nuestros especialistas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="servicio-card h-100">
+                            <img src="./assets/icono-tubo.png" alt="Laboratorio" class="icono-servicio">
+                            <h3 class="texto1">
+                                Laboratorio
+                            </h3>
+                            <p class="texto3">
+                                Análisis clínicos completos con resultados rápidos
+                                y seguros.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="servicio-card h-100">
+                            <img src="./assets/icono-camara.png" alt="Diagnóstico por imagen" class="icono-servicio">
+                            <h3 class="texto1">
+                                Diagnóstico por Imagen
+                            </h3>
+                            <p class="texto3">
+                                Radiografías, ecografías, resonancias y tomografías
+                                de última generación.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="servicio-card h-100">
+                            <img src="./assets/icono-estetoscopio.png" alt="Urgencias" class="icono-servicio">
+                            <h3 class="texto1">
+                                Urgencias
+                            </h3>
+                            <p class="texto3">
+                                Atención de urgencias médicas de lunes a sábados
+                                en horario extendido.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="servicio-card h-100">
+                            <img src="./assets/icono-libreta.png" alt="Historia clínica digital" class="icono-servicio">
+                            <h3 class="texto1">
+                                Historia Clínica Digital
+                            </h3>
+                            <p class="texto3">
+                                Accedé a tu historial médico completo desde la
+                                plataforma.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="especialidades py-4">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="texto2">
+                        ESPECIALIDADES
+                    </p>
+                    <h2 class="texto1">
+                        Atención Especializada
+                    </h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1758691463198-dc663b8a64e4?w=400&h=220&fit=crop&auto=format"
+                                class="card-img-top" alt="Clínica Médica">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    🩺 Clínica Médica
+                                </h5>
+                                <p class="texto3">
+                                    Atención general integral para adultos.
+                                </p>
+                                <a href="#" class="link-profesionales">
+                                    Ver profesionales →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1632052999447-e542d08d4f7d?w=400&h=220&fit=crop&auto=format"
+                                class="card-img-top" alt="Pediatría">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    👶 Pediatría
+                                </h5>
+                                <p class="texto3">
+                                    Salud y desarrollo infantil especializado.
+                                </p>
+                                <a href="#" class="link-profesionales">
+                                    Ver profesionales →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=1400&h=600&fit=crop&auto=format"
+                                class="card-img-top" alt="Cardiología">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    ❤️ Cardiología
+                                </h5>
+                                <p class="texto3">
+                                    Diagnóstico y tratamiento del corazón.
+                                </p>
+                                <a href="#" class="link-profesionales">
+                                    Ver profesionales →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1758691461935-202e2ef6b69f?w=400&h=220&fit=crop&auto=format"
+                                class="card-img-top" alt="Traumatología">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    🦴 Traumatología
+                                </h5>
+                                <p class="texto3">
+                                    Lesiones musculoesqueléticas y rehabilitación.
+                                </p>
+                                <a href="#" class="link-profesionales">
+                                    Ver profesionales →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1676313030076-4ac0b37050fd?w=400&h=220&fit=crop&auto=format"
+                                class="card-img-top" alt="Dermatología">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    🔬 Dermatología
+                                </h5>
+                                <p class="texto3">
+                                    Enfermedades y estética de la piel.
+                                </p>
+                                <a href="#" class="link-profesionales">
+                                    Ver profesionales →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1659353888906-adb3e0041693?w=400&h=220&fit=crop&auto=format"
+                                class="card-img-top" alt="Ginecología">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    🌸 Ginecología
+                                </h5>
+                                <p class="texto3">
+                                    Salud femenina y control preventivo.
+                                </p>
+                                <a href="#" class="link-profesionales">
+                                    Ver profesionales →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-especialidades">
+                        Ver todas las especialidades
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="equipo-medico">
+            <div class="container">
+
+                <div class="text-center m-5">
+                    <p class="texto2">
+                        EQUIPO MÉDICO
+                    </p>
+                    <h2 class="texto1">
+                        Profesionales Destacados
+                    </h2>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1659353888906-adb3e0041693?w=400&h=220&fit=crop&auto=format"
+                                class="card-img-top" alt="Clínica Médica">
+                            <div class="card-body ">
+                                <h5 class="texto1">
+                                    Dra. Laura Martínez
+                                </h5>
+                                <p class="texto2">
+                                    Ginecología
+                                </p>
+                                <p class="texto3">
+                                    Lun, Mié, Vie
+                                </p>
+                                <a href="" class="btn btn-success w-100">Solicitar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=1400&h=600&fit=crop&auto=format"
+                                class="card-img-top" alt="Pediatría">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    Dr. Carlos Romero
+                                </h5>
+                                <p class="texto2">
+                                    Clínica Medíca
+                                </p>
+                                <p class="texto3">
+                                    Mar, Jue
+                                </p>
+                                <a href="" class="btn btn-success w-100">Solicitar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1673865641073-4479f93a7776?w=300&h=300&fit=crop&auto=format"
+                                class="card-img-top" alt="Cardiología">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    Dra. Ana Soria
+                                </h5>
+                                <p class="texto2">
+                                    Padiatría
+                                </p>
+                                <p class="texto3">
+                                    Lun a Vie
+                                </p>
+                                <a href="" class="btn btn-success w-100">Solicitar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="card especialidad-card h-100">
+                            <img src="https://images.unsplash.com/photo-1758691461935-202e2ef6b69f?w=400&h=220&fit=crop&auto=format"
+                                class="card-img-top" alt="Traumatología">
+                            <div class="card-body">
+                                <h5 class="texto1">
+                                    Dr. Marcos Díaz
+                                </h5>
+                                <p class="texto2">
+                                    Traumatología
+                                </p>
+                                <p class="texto3">
+                                    Lun, Mié
+                                </p>
+                                <a href="" class="btn btn-success w-100">Solicitar Turno</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="beneficios">
+            <div class="container ">
+                <div class="text-center mb-4">
+                    <p class="texto2">¿POR QUÉ ELEGIRNOS?</p>
+                    <h3 class="texto1">Beneficios de nuestra plataforma</h3>
+                </div>
+                <div class="container text-center mt-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6  mb-4">
+                            <img src="./assets/icono-rayo.png" alt="icono-turnos">
+                            <p class="texto1">Turnos en segundos</p>
+                            <p class="texto3">Reservá sin llamadas ni esperas, disponible 24/7</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <img src="./assets/icono-campana.png" alt="icono-recordatorio">
+                            <p class="texto1">Recordatorios</p>
+                            <p class="texto3">Recibís notificaciones antes de tu consulta</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ">
+                            <img src="./assets/icono-celular.png" alt="icono-acceso">
+                            <p class="texto1">Acceso digital</p>
+                            <p class="texto3">Toda tu historia clínica desde tu celular</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ">
+                            <img src="./assets/icono-escudo.png" alt="icono-datos">
+                            <p class="texto1">Datos seguros</p>
+                            <p class="texto3">Tu informacíon protegida con encriptación</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="novedades mt-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="texto2">NOVEDADES</p>
+                    <h2 class="texto1">Noticias Institucionales</h2>
+                </div>
+                <div class="row g-10">
+                    <div class="col-md-4 col-sm-12 g-4">
+                        <div class="novedades-card h-100">
+                            <p class="texto2">Novedades<span class="texto3 mx-2">28 jul 2026</span></p>
+                            <p class="texto1">Nueva Unidad de Diagnóstico por Imagen</p>
+                            <p class="texto3">Incorporamos tecnología de última generación para resonancias y
+                                tomografías.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 g-4">
+                        <div class="novedades-card h-100">
+                            <p class="texto2">Campaña<span class="texto3 mx-2">15 jul 2026</span></p>
+                            <p class="texto1">Campaña de Vacunación Gratuita</p>
+                            <p class="texto3">Vacunación contra gripe e influenza sin cargo para mayores de 60 años.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 g-4">
+                        <div class="novedades-card h-100">
+                            <p class="texto2">Institucional<span class="texto3 mx-2">02 jul 2026</span></p>
+                            <p class="texto1">MediTurnos cumple 15 años</p>
+                            <p class="texto3">Celebramos 15 años cuidando la salud de miles de familias en la región.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="solicitar-turnos mb-5">
+            <div class="container text-center mt-5 py-5 contenido">
+                <h2 class="texto1">Tu salud no puede esperar</h2>
+                <p class="texto1">Solicitá tu turno ahora y accedé a la mejor atención médica de Buenos Aires.</p>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-success mx-4">
+                        Solicitar Turno
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        Registrarse Gratis
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div>
+        <div class="container">
             <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-10">
                 <div class="col">
-                    <div class="logo-footer">
+                    <div class="logo-footer d-flex align-items-center gap-2 mb-1">
                         <img src="./assets/logo mediturno.jpg" alt="Logo">
                         <h5 class="texto1">Medi<span class="texto2">Turnos</span>
                             <p class="texto3">CLINICA MEDICA</p>
@@ -85,28 +581,28 @@
                 </div>
                 <div class="col">
                     <h6 class="texto2">REDES SOCIALES</h6>
-                    <div>
-                        <a href="#" target="_blank">
+                    <div class="mb-3">
+                        <a href="#" target="_blank" class="prueba">
                             <img src="./assets/icono-Facebook.png" alt="Facebook">
                             Facebook
                             <p class="texto3">@MediTurnos.Clinica</p>
                         </a>
                     </div>
-                    <div>
+                    <div class="mb-3">
                         <a href="#" target="_blank">
                             <img src="./assets/icono-Instagram.png" alt="Instagram">
                             Instagram
                             <p class="texto3">@MediTurnos.Clinica</p>
                         </a>
                     </div>
-                    <div>
+                    <div class="mb-3">
                         <a href="#" target="_blank">
                             <img src="./assets/icono-X.png" alt="Twitter">
                             Twitter / X
                             <p class="texto3">@MediTurnos</p>
                         </a>
                     </div>
-                    <div>
+                    <div class="mb-3">
                         <a href="#" target="_blank">
                             <img src="./assets/icono-WhatsApp.png" alt="WhatsApp">
                             WhatsApp
@@ -116,33 +612,37 @@
                 </div>
                 <div class="col">
                     <h6 class="texto2">CONTACTO</h6>
-                    <div>
-                        <p class="mb-1">Dirección
-                        <p class="texto3"> Av. Siempre Viva 123, Ciudad</p>
-                        </p>
+                    <div class="contacto-item">
+                        <img src="./assets/icono-ubicacion.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Dirección</p>
+                            <p class="texto3">Av. Siempre Viva 123, Ciudad</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="mb-1">Teléfono
-                        <p class="texto3">
-                            +54 9 11 1234-5678
-                        </p>
-                        </p>
+                    <div class="contacto-item">
+                        <img src="./assets/icono-celular.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Teléfono</p>
+                            <p class="texto3">+54 9 11 1234-5678</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="mb-1">Email
-                        <p class="texto3">
-                            info@mediturno.com.ar
-                        </p>
-                        </p>
+                    <div class="contacto-item">
+                        <img src="./assets/icono-Email.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Email</p>
+                            <p class="texto3">info@mediturno.com.ar</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="mb-1">Horarios
-                        <p class="texto3">
-                            Lunes a Viernes: 8:00 - 20:00
-                            <br>
-                            Sábados: 9:00 - 14:00
-                        </p>
-                        </p>
+                    <div class="contacto-item">
+                        <img src="./assets/icono-calendario.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Horarios</p>
+                            <p class="texto3">
+                                Lunes a Viernes: 8:00 - 20:00
+                                <br>
+                                Sábados: 9:00 - 14:00
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

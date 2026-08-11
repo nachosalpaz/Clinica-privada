@@ -1,63 +1,147 @@
-.navbar-mediturno {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--color-primario);
+body {
+  background-color: var(--color-primario);
+}
+.banner {
+  background-color: var(--color-cuarto);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+}
+.banner .btn {
+  background-color: #08213d;
+  border: none;
+  padding: 5px 12px;
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  .banner {
+    display: none;
+  }
+}
+.gradiante {
+  position: relative;
+}
+.carousel-item img {
+  height: 520px;
+  object-fit: cover;
+}
+.gradiante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  pointer-events: none; /* Permite hacer clic a través del degradado */
+}
+.estadistica-card {
+  height: 138px;
+  background-color: #18375f;
+  border: 1px solid #245477;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.icono-estadistica {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+.estadistica-card h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.estadistica-card p {
+  font-size: 14px;
+  margin: 2px 0 0;
+}
+.equipo-medico,
+.beneficios,
+.servicios {
+  background-color: #0e2948;
+  padding: 65px 0;
+}
+.novedades-card,
+.servicio-card {
+  background-color: #18375f;
+  border: 1px solid #245477;
+  border-radius: 12px;
+  min-height: 180px;
+  padding: 25px;
+  text-align: left;
+  transition: 0.3s;
+}
+.servicio-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-cuarto);
+}
+.icono-servicio {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.especialidades {
+  background-color: var(--color-primario);
+  min-height: 100vh;
+}
+.especialidad-card {
+  background-color: #17375f;
+  border: 1px solid #255174;
+  border-radius: 11px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.especialidad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-.logo-nav{
-    display:flex;
-    align-items:center;
-    text-decoration:none;
+.especialidad-card img {
+  height: 160px;
+  object-fit: cover;
 }
-
-.logo-nav img{
-    width:60px;
-    height:60px;
-    object-fit:contain;
-    border-radius:50%;
+.especialidad-card .card-body {
+  padding: 20px;
 }
-
-.texto1{
-    color: var(--color-secundario);
+.link-profesionales {
+  color: var(--color-cuarto);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
 }
-.texto2{
-    color: var(--color-cuarto);
+.link-profesionales:hover {
+  text-decoration: underline;
 }
-.texto3{
-    color: var(--color-terciario);
-    font-size: 12px;
+.btn-especialidades {
+  background-color: var(--color-cuarto);
+  color: var(--color-secundario);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 8px;
+  border: none;
 }
-.texto-nav{
-    color: var(--color-secundario);
+.btn-especialidades:hover {
+  background-color: var(--color-cuarto);
+  color: var(--color-secundario);
 }
-.boton-nav{
-    background-color: var(--color-cuarto);
+.beneficios img {
+  background-color: rgb(76, 175, 80, 0.15);
+  border-radius: 50%;
+  padding: 10px;
+  height: 60px;
+  object-fit: cover;
 }
-footer{
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
-    padding: 20px;
+.solicitar-turnos {
+  background-color: var(--color-cuarto);
 }
-.logo-footer{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom: 4px;
-}
-.logo-footer img{
-    width:60px;
-    height:60px;
-    object-fit:contain;
-    border-radius:50%;
-}
-footer a{
-    color: var(--color-secundario);
-    text-decoration: none;
-}
-footer a img{
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    margin-right: 5px;
-}
-
