@@ -1,16 +1,6 @@
 body {
   background-color: var(--color-primario);
 }
-.texto1 {
-  color: var(--color-secundario);
-}
-.texto2 {
-  color: var(--color-cuarto);
-}
-.texto3,
-.texto4 {
-  color: var(--color-terciario);
-}
 .banner {
   background-color: var(--color-cuarto);
   height: 40px;

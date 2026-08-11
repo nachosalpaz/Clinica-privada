@@ -13,7 +13,16 @@
 }
 
 /* estilos header y footer */
-
+.texto1 {
+  color: var(--color-secundario);
+}
+.texto2 {
+  color: var(--color-cuarto);
+}
+.texto3,
+.texto4 {
+  color: var(--color-terciario);
+}
 .navbar-mediturno {
   display: flex;
   justify-content: space-around;
