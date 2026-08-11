@@ -1,65 +1,25 @@
 body {
   background-color: var(--color-primario);
 }
-.navbar-mediturno {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--color-primario);
-}
-.logo-nav {
+.banner {
+  background-color: var(--color-cuarto);
+  height: 40px;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
 }
-.logo-footer img,
-.logo-nav img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  border-radius: 50%;
+.banner .btn {
+  background-color: #08213d;
+  border: none;
+  padding: 5px 12px;
+  font-size: 13px;
 }
-.texto1 {
-  color: var(--color-secundario);
-}
-.texto2 {
-  color: var(--color-cuarto);
-}
-.texto3,
-.texto4 {
-  color: var(--color-terciario);
-}
-.texto-nav {
-  color: var(--color-secundario);
-}
-.boton-nav {
-  background-color: var(--color-cuarto);
-}
-footer {
-  background-color: var(--color-primario);
-  color: var(--color-secundario);
-  padding: 20px;
-}
-footer a {
-  color: var(--color-secundario);
-  text-decoration: none;
-}
-footer a img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  margin-right: 5px;
-}
-.contacto-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px;
-}
-.icono {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  margin-right: 12px;
-  margin-top: 2px;
+@media (max-width: 767px) {
+  .banner {
+    display: none;
+  }
 }
 .gradiante {
   position: relative;
@@ -104,6 +64,7 @@ footer a img {
   font-size: 14px;
   margin: 2px 0 0;
 }
+.equipo-medico,
 .beneficios,
 .servicios {
   background-color: #0e2948;
@@ -170,28 +131,17 @@ footer a img {
   border-radius: 8px;
   border: none;
 }
-.btn-registro,
-.btn-turno{
-  background-color: var(--color-primario);
-  color: var(--color-secundario);
-  font-size: 14px;
-  font-weight: bold;
-  padding: 14px 30px;
-  border-radius: 8px;
-  border: none;
-}
-
 .btn-especialidades:hover {
   background-color: var(--color-cuarto);
   color: var(--color-secundario);
 }
-.beneficios img{
-  background-color:rgb(76, 175, 80, 0.15) ;
+.beneficios img {
+  background-color: rgb(76, 175, 80, 0.15);
   border-radius: 50%;
   padding: 10px;
   height: 60px;
   object-fit: cover;
 }
-.solicitar-turnos{
+.solicitar-turnos {
   background-color: var(--color-cuarto);
 }
