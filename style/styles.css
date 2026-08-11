@@ -50,6 +50,7 @@ footer {
   background-color: var(--color-primario);
   color: var(--color-secundario);
   padding: 20px;
+  border-top: 2px solid var(--color-cuarto);
 }
 footer a {
   color: var(--color-secundario);

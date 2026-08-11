@@ -17,12 +17,18 @@ body{
 .perfil-info {
     padding: 32px;
 }
+.boton-regresar{
+    text-decoration: none;
+    color: var(--color-cuarto);
+}
 .especialidad {
     color: var(--color-cuarto);
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
 }
+.info-prof,
+.dia p,
 .perfil-info h1 {
     font-size: 30px;
     font-weight: 700;
@@ -42,6 +48,7 @@ hr {
     border-top: 1px solid #28516c;
     margin: 25px 0 17px;
 }
+.comentarios-card h3,
 .perfil-info h6,
 .info-card h3 {
     color: var(--color-cuarto);
@@ -101,6 +108,15 @@ hr {
     padding: 4px 9px;
     border-radius: 4px;
     margin-right: 3px;
+}
+.comentarios-card{
+  background-color: #18375f;
+  border: 1px solid #245477;
+  border-radius: 12px;
+  min-height: 180px;
+  padding: 25px;
+  text-align: left;
+  transition: 0.3s;
 }
 @media (max-width: 767px) {
 
