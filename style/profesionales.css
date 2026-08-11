@@ -226,7 +226,7 @@ body {
     background-color: var(--color-primario);
     color: var(--color-secundario);
     font-size: 12px;
-
+    text-decoration: none; 
  
 }
 .btnProfesional #solicitarTurno {
@@ -238,6 +238,7 @@ body {
     background-color: var(--color-cuarto);
     color: var(--color-secundario);
     font-size: 12px;
+    text-decoration: none; 
 }
 
 .btnProfesional #verPerfil:hover {
