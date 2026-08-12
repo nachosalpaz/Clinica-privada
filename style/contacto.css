@@ -1,0 +1,36 @@
+body {
+  background-color: var(--color-primario);
+}
+.formulario-contacto {
+  height: 138px;
+  background-color: #18375f;
+  border: 1px solid #245477;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info-card {
+  margin-left: 50px;
+  padding-left: 20px;
+  height: 138px;
+  background-color: #18375f;
+  border: 1px solid #245477;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form-control {
+  background-color: var(--color-primario);
+}
+.form-control:focus {
+  background-color: var(--color-primario);
+  border-color: inherit;
+  box-shadow: inset;
+}
+.form-control::placeholder {
+  color: var(--color-terciario);
+  opacity: 1;
+}
