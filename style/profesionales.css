@@ -1,0 +1,280 @@
+.contenedorTitulos {
+
+
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: inset 0 1px 0 0 var(--color-cuarto),
+        inset 0 -1px 0 0 var(--color-cuarto);
+
+}
+/* Ocultar los inputs de tipo radio */
+input[type="radio"][name="filtro-especialidad"] {
+    display: none;
+}
+
+/* Estilos para los botones (labels) */
+.botones-filtro {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.btn-filtro {
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    background-color: transparent;
+    color: var(--color-secundario);
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro:hover {
+    background-color: var(--color-cuarto);
+}
+
+/* --- Lógica del Filtro mediante combinadores CSS --- */
+
+/* Estilizado del botón activo */
+#todos:checked ~ .botones-filtro label[for="todos"],
+#clinica:checked ~ .botones-filtro label[for="clinica"],
+#cardiologia:checked ~ .botones-filtro label[for="cardiologia"],
+#pediatria:checked ~ .botones-filtro label[for="pediatria"],
+#traumatologia:checked ~ .botones-filtro label[for="traumatologia"],
+#ginecologia:checked ~ .botones-filtro label[for="ginecologia"],
+#dermatologia:checked ~ .botones-filtro label[for="dermatologia"] {
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
+}
+
+/* Ocultar todas las tarjetas cuando se selecciona un filtro específico */
+#clinica:checked ~ .directorioProfesional .profesional,
+#cardiologia:checked ~ .directorioProfesional .profesional,
+#pediatria:checked ~ .directorioProfesional .profesional,
+#traumatologia:checked ~ .directorioProfesional .profesional,
+#ginecologia:checked ~ .directorioProfesional .profesional,
+#dermatologia:checked ~ .directorioProfesional .profesional{
+    display: none;
+}
+
+/* Mostrar únicamente las tarjetas de la especialidad seleccionada */
+#clinica:checked ~ .directorioProfesional .profesional.clinica,
+#cardiologia:checked ~ .directorioProfesional .profesional.cardiologia,
+#pediatria:checked ~ .directorioProfesional .profesional.pediatria,
+#traumatologia:checked ~ .directorioProfesional .profesional.traumatologia,
+#ginecologia:checked ~ .directorioProfesional .profesional.ginecologia,
+#dermatologia:checked ~ .directorioProfesional .profesional.dermatologia {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ocupa todo el ancho de su celda en la grilla */
+    margin: 0 auto; /* Centra el bloque dentro de su celda */
+
+}
+
+
+
+
+
+.titulo {
+    text-align: center;
+    color: var(--color-cuarto);
+}
+
+.subtitulo {
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.subtitulo2 {
+    text-align: center;
+    color: var(--color-secundario);
+    margin-top: 2%;
+}
+
+body {
+    background-color: var(--color-primario);
+    
+}
+
+ .directorioProfesional {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px; /* Opcional: limita el ancho máximo para que no se extienda demasiado en pantallas gigantes */
+    margin: 0 auto;    /* Centra todo el contenedor en la pantalla */
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+.directorioProfesional article{
+    
+        height: 300px;
+        width: 100%;
+        background-color: var(--color-primario);
+        display: flex;
+        border-radius: 12px;
+        border: 0.005rem solid rgb(2, 48, 2);
+        
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+     /*    cursor: pointer; */
+        transition: transform 1s ease, box-shadow 0.4s ease; 
+        /* box-shadow: inset 4px 8px 16px var(--color-cuarto); */  
+         box-shadow: 4px 8px 16px black;   
+         box-sizing: border-box; 
+    
+}
+
+
+
+.imagenProfesional {
+    width:100%;
+    height:60%;
+    position:relative;
+   
+}
+.imagenProfesional .capaSombra{
+
+    position:absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+    pointer-events: none;
+}
+
+  
+.imagenProfesional img {
+    width:100%;
+    height:100%;
+   /*  object-fit: cover; */
+   transition: transform 2s ease; /*velocidad del zoom*/
+}
+
+.imagenProfesional img:hover{
+    transform: scale(1.1); /*aumenta la img 2% */
+}
+.descripcion {
+    
+    width: 90%;
+    height:40%;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-block-end: 15px;
+    margin-top: -5%;
+    position: relative;
+}
+
+.nombre {
+    display: flex;
+    height:10%;
+    justify-content:flex-start; 
+}
+.nombre h3 {
+    color: var(--color-secundario);
+    font-size: 16px;
+   
+}
+
+.profesion  {
+    display: flex;
+    color: var(--color-cuarto);
+    font-size: 14px;
+    height: 10%;
+    justify-content:flex-start; 
+}
+.texto{
+    display: flex;
+    text-align: left;
+    color: var(--color-terciario);
+    font-size: 12px;
+    height: 20%;
+    margin-top: 5%;
+    justify-content:flex-start;  
+    
+}
+
+
+.dias  {
+    display: flex;
+    color: var(--color-terciario);
+    font-size: 12px;
+    height: 10%;
+    margin-top: 5%;
+    justify-content:left; 
+
+}
+
+.btnProfesional{
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-block-end: 2px;
+}
+.btnProfesional #verPerfil {
+    width: 45%;
+    height: 100%;
+    border: 0.05rem solid var(--color-cuarto);
+    border-radius: 5px; 
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-size: 12px;
+    text-decoration: none; 
+ 
+}
+.btnProfesional #solicitarTurno {
+   
+    width: 45% ;
+    height: 100%;
+    border: 0.05rem solid var(--color-cuarto);
+    border-radius: 5px; 
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
+    font-size: 12px;
+    text-decoration: none; 
+}
+
+.btnProfesional #verPerfil:hover {
+
+    transform: translateY(-4px); /* Cambiado a translateY para que suba en vez de moverse solo a la derecha */
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    box-shadow: inset 4px 8px 16px var(--color-cuarto); 
+}
+.btnProfesional #solicitarTurno:hover {
+
+    transform: translateY(-4px); /* Cambiado a translateY para que suba en vez de moverse solo a la derecha */
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    box-shadow: inset 4px 8px 16px var(--color-secundario); 
+}
+.profesional:hover {
+    transform: translateY(-4px); /* Cambiado a translateY para que suba en vez de moverse solo a la derecha */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .directorioProfesional {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
