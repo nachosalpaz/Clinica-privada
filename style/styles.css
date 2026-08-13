@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+:root{
+    --color-primario: #0D2340;
+    --color-secundario: #FFFFFF;
+    --color-terciario: rgb(192, 192, 192);
+    --color-cuarto: #4CAF50;
+}
+
+/* estilos header y footer */
+.texto1 {
+  color: var(--color-secundario);
+}
+.texto2 {
+  color: var(--color-cuarto);
+}
+.texto3,
+.texto4 {
+  color: var(--color-terciario);
+}
+.navbar-mediturno {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-primario);
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo-footer img,
+.logo-nav img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.texto-nav {
+  color: var(--color-secundario);
+}
+.boton-nav {
+  background-color: var(--color-cuarto);
+}
+footer {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  padding: 20px;
+  border-top: 2px solid var(--color-cuarto);
+}
+footer a {
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+footer a img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+.contacto-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.icono {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 12px;
+  margin-top: 2px;
+}
