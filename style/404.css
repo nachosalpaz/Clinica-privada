@@ -1,0 +1,118 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+    background-color: var(--color-primario);
+}
+
+.error-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.error-content {
+    width: 100%;
+    max-width: 700px;
+}
+.error-number {
+    color: #123b52;
+    font-size: 125px;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -8px;
+}
+.error-cruz {
+    color: var(--color-cuarto);
+    font-size: 65px;
+    line-height: 1;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.error-content h1 {
+    color: var(--color-secundario);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.descripcion {
+    color: var(--color-secundario);
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.detalle {
+    color: var(--color-terciario);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.btn-inicio {
+    min-width: 170px;
+    padding: 13px 25px;
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
+    border: 2px solid var(--color-cuarto);
+    border-radius: 11px;
+    font-size: 15px;
+}
+
+.btn-inicio:hover {
+    background-color: var(--color-cuarto);
+    border-color: var(--color-cuarto);
+    color: var(--color-secundario);
+}
+.btn-soporte {
+    min-width: 200px;
+    padding: 13px 25px;
+    background-color: transparent;
+    color: var(--color-cuarto);
+    border: 2px solid var(--color-cuarto);
+    border-radius: 11px;
+    font-size: 15px;
+}
+.btn-soporte:hover {
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
+}
+
+@media (max-width: 576px) {
+
+    .error-number {
+        font-size: 90px;
+    }
+
+    .error-cruz {
+        font-size: 50px;
+    }
+
+    .error-content h1 {
+        font-size: 24px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .detalle {
+        font-size: 12px;
+    }
+
+    .botones {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .btn-inicio,
+    .btn-soporte {
+        width: 100%;
+        max-width: 250px;
+    }
+}
