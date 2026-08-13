@@ -1,4 +1,14 @@
+.contenedorTitulos {
 
+
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: inset 0 1px 0 0 var(--color-cuarto),
+        inset 0 -1px 0 0 var(--color-cuarto);
+
+}
 /* Ocultar los inputs de tipo radio */
 input[type="radio"][name="filtro-especialidad"] {
     display: none;
@@ -103,6 +113,8 @@ body {
     max-width: 1200px; /* Opcional: limita el ancho máximo para que no se extienda demasiado en pantallas gigantes */
     margin: 0 auto;    /* Centra todo el contenedor en la pantalla */
     box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
 } 
 
 .directorioProfesional article{
