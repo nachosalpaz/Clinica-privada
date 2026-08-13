@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión - Paciente</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/iniciar-sesion.css">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body>
+  <header class="navbar-mediturno mb-2">
+        <nav class="navbar navbar-expand-lg navbar-mediturno">
+            <div class="container-fluid ">
+                <div class=" logo-nav navbar-brand">
+                    <a class="navbar-brand" href="../Index.html"><img src="../assets/logo mediturno.jpg" alt="Logo">
+                    </a>
+                    <div>
+                        <h5 class="texto1">Medi<span class="texto2">Turnos</span></h5>
+                        <p class="texto3">CLINICA MEDICA</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler boton-nav" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link texto-nav" aria-current="page" href="../Index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link texto-nav " href="/pages/404.html">Especialidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link texto-nav" href="/pages/404.html">Profesionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link texto-nav" href="/pages/404.html">Solicitar Turno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link texto-nav" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link texto-nav" href="/pages/nosotros.html">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                    <nav class="navbar">
+                        <form class="container-fluid justify-content-start">
+                            <a href="/pages/inicio-paciente.html">
+                                <button class="btn btn-outline-success me-2" type="button">Iniciar Sesión</button>
+                            </a>
+                            <a href="/pages/registro.html">
+                                <button class="btn btn-success me-2" type="button">Registrarse</button>
+                            </a>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="login-container">
+
+        <div class="login-box">
+
+            <h1>Bienvenido</h1>
+
+            <p class="subtitulo">
+                Ingresá a tu cuenta de MediTurnos
+            </p>
+
+
+            <div class="tipo-usuario">
+
+                <a href="./iniciar-sesion-paciente.html"
+                   class="tipo activo">
+
+                    <img src="../assets/img.iniciar-sesion/icono-paciente.png" class="paciente-img">
+
+                    Paciente
+
+                </a>
+
+
+                <a href="./inicio-profesional.html"
+                   class="tipo">
+
+                    <img src="../assets/img.iniciar-sesion/icono-profesional.png" class="profesional-img">
+
+                    Profesional
+
+                </a>
+
+            </div>
+
+
+            <form>
+
+                <div class="mb-3">
+
+                    <label for="usuario" class="form-label">
+                        USUARIO O CORREO ELECTRÓNICO
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        class="form-control"
+                        placeholder="usuario@email.com"
+                    >
+
+                </div>
+
+
+                <div class="mb-2">
+
+                    <label for="password" class="form-label">
+                        CONTRASEÑA
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="••••••••"
+                    >
+
+                </div>
+
+
+                <div class="recuperar">
+
+                    <a href="#">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+
+                </div>
+
+
+                <button type="submit" class="btn iniciar">
+                    Iniciar Sesión
+                </button>
+
+
+                <a href="#" class="btn google">
+
+                    <img src="../assets/img.iniciar-sesion/icono-google.png" class="google-img">
+
+                    Continuar con Google
+
+                </a>
+
+            </form>
+
+
+            <p class="registro">
+
+                ¿No tenés una cuenta?
+
+                <a href="registro.html">
+                    Registrarse gratis
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+  <footer>
+        <div class="container">
+            <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-10">
+                <div class="col">
+                    <div class="logo-footer d-flex align-items-center gap-2 mb-1">
+                        <img src="../assets/logo mediturno.jpg" alt="Logo">
+                        <h5 class="texto1">Medi<span class="texto2">Turnos</span>
+                            <p class="texto3">CLINICA MEDICA</p>
+                        </h5>
+                    </div>
+                    <div>
+                        <p>Cuidamos tu salud, siempre. Brindamos atención médica de calidad con profesionales
+                            especializados y tecnología de vanguardia.</p>
+                        <p class="texto2">Cuidamos tu salud, siempre.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6 class="texto2">REDES SOCIALES</h6>
+                    <div class="mb-3">
+                        <a href="/pages/404.html" target="_blank" class="prueba">
+                            <img src="../assets/icono-Facebook.png" alt="Facebook">
+                            Facebook
+                            <p class="texto3">@MediTurnos.Clinica</p>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="/pages/404.html" target="_blank">
+                            <img src="../assets/icono-Instagram.png" alt="Instagram">
+                            Instagram
+                            <p class="texto3">@MediTurnos.Clinica</p>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="/pages/404.html" target="_blank">
+                            <img src="../assets/icono-X.png" alt="Twitter">
+                            Twitter / X
+                            <p class="texto3">@MediTurnos</p>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="/pages/404.html" target="_blank">
+                            <img src="../assets/icono-WhatsApp.png" alt="WhatsApp">
+                            WhatsApp
+                            <p class="texto3">+54 9 11 1234-5678</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6 class="texto2">CONTACTO</h6>
+                    <div class="contacto-item">
+                        <img src="../assets/icono-ubicacion.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Dirección</p>
+                            <p class="texto3">Av. Siempre Viva 123, Ciudad</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <img src="../assets/icono-celular.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Teléfono</p>
+                            <p class="texto3">+54 9 11 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <img src="../assets/icono-Email.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Email</p>
+                            <p class="texto3">info@mediturno.com.ar</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <img src="../assets/icono-calendario.png" class="icono">
+                        <div>
+                            <p class="mb-1 titulo-contacto">Horarios</p>
+                            <p class="texto3">
+                                Lunes a Viernes: 8:00 - 20:00
+                                <br>
+                                Sábados: 9:00 - 14:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</html>
