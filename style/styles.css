@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-around;
   background-color: var(--color-primario);
+  border-bottom: 1px solid var(--color-cuarto);
 }
 .logo-nav {
   display: flex;
